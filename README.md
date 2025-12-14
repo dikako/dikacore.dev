@@ -1,34 +1,69 @@
-# dikacore.dev Portfolio
+# dikacore.dev — Personal Portfolio
 
-A premium, dark-themed portfolio for Dika (Senior QA Engineer).
+A premium, soft-contextual themed portfolio for **Fransiskus Andika Setiawan** — Senior QA Engineer (SDET).
 
-## 🚀 How to Deploy (GitHub Pages)
+🔗 **Live Site**: [dikacore.dev](https://dikacore.dev)
 
-This project is built with vanilla HTML/CSS/JS, making it extremely easy to deploy.
+---
 
-1.  **Push to GitHub**:
-    Ensure this code is in your GitHub repository (e.g., `dikako/dikacore.dev` or a dedicated repo).
-    ```bash
-    git add .
-    git commit -m "Initial commit of portfolio"
-    git push origin main
-    ```
+## ✨ Features
 
-2.  **Enable Pages**:
-    - Go to your Repository **Settings** > **Pages**.
-    - Under **Source**, select `Deploy from a branch`.
-    - Select `main` (or `master`) branch and `/ (root)` folder.
-    - Click **Save**.
+- **Professional Journey** — Auto-calculated experience duration for each role
+- **Technical Stack** — Programming languages, automation tools, infrastructure & platform coverage
+- **Packages** — Distributed libraries on JitPack & RubyGems
+- **Contact Modal** — Quick access to Email, LinkedIn, GitHub
+- **SEO Optimized** — Meta tags, Open Graph, JSON-LD structured data
+- **Responsive** — Mobile-friendly design
 
-3.  **Done!**
-    Your site will be live at `https://yourusername.github.io/repo-name`.
+---
+
+## 🚀 Deployment (GitHub Pages)
+
+1. **Push to GitHub**:
+   ```bash
+   git add .
+   git commit -m "Update portfolio"
+   git push origin main
+   ```
+
+2. **Enable Pages**:
+   - Go to Repository **Settings** → **Pages**
+   - Source: `Deploy from a branch`
+   - Branch: `main` / `/ (root)`
+   - Click **Save**
+
+3. **Done!** — Live at `https://yourusername.github.io/repo-name`
+
+---
 
 ## 🛠 Project Structure
-- `index.html`: Main structure.
-- `style.css`: All styles (Glassmorphism, Dark Mode, Animations).
-- `script.js`: Scroll reveal logic and smooth scrolling.
-- `assets/`: Images and icons.
 
-## ✨ Customization
-- **Change Colors**: Edit the `:root` variables in `style.css`.
-- **Update Content**: Edit the text directly in `index.html`.
+```
+├── index.html      # Main HTML structure
+├── style.css       # Core styles (Soft Contextual theme)
+├── modal.css       # Contact modal styles
+├── script.js       # Dynamic calculations & interactions
+└── README.md       # This file
+```
+
+---
+
+## 🎨 Customization
+
+| What | How |
+|------|-----|
+| **Colors** | Edit `:root` variables in `style.css` |
+| **Content** | Edit text in `index.html` |
+| **Job History** | Update `.project-card` sections with `data-start` and `data-end` attributes |
+
+---
+
+## 🔧 Tech Stack
+
+- Vanilla HTML, CSS, JavaScript
+- Google Fonts (Manrope, Syne)
+- No build tools required
+
+---
+
+© 2025 Fransiskus Andika Setiawan @dikacore.dev

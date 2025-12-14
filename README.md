@@ -2,11 +2,11 @@
 
 A premium, soft-contextual themed portfolio for **Fransiskus Andika Setiawan** — Senior QA Engineer (SDET).
 
-🔗 **Live Site**: [dikacore.dev](https://dikacore.dev)
+**Live Site**: [dikacore.dev](https://dikacore.dev)
 
 ---
 
-## ✨ Features
+## Features
 
 - **Professional Journey** — Auto-calculated experience duration for each role
 - **Technical Stack** — Programming languages, automation tools, infrastructure & platform coverage
@@ -17,26 +17,20 @@ A premium, soft-contextual themed portfolio for **Fransiskus Andika Setiawan** �
 
 ---
 
-## 🚀 Deployment (GitHub Pages)
+## Deployment (GitHub Pages)
 
 1. **Push to GitHub**:
-   ```bash
-   git add .
-   git commit -m "Update portfolio"
-   git push origin main
-   ```
-
 2. **Enable Pages**:
    - Go to Repository **Settings** → **Pages**
    - Source: `Deploy from a branch`
-   - Branch: `main` / `/ (root)`
+   - Branch: `master` / `/ (root)`
    - Click **Save**
 
 3. **Done!** — Live at `https://yourusername.github.io/repo-name`
 
 ---
 
-## 🛠 Project Structure
+## Project Structure
 
 ```
 ├── index.html      # Main HTML structure
@@ -48,7 +42,7 @@ A premium, soft-contextual themed portfolio for **Fransiskus Andika Setiawan** �
 
 ---
 
-## 🎨 Customization
+## Customization
 
 | What | How |
 |------|-----|

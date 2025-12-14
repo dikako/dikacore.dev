@@ -1,0 +1,504 @@
+:root {
+    --bg-main: #F5F5F0;
+    /* Alabaster */
+    --bg-card: #FFFFFF;
+    --text-primary: #303030;
+    /* Charcoal */
+    --text-secondary: #595959;
+    --accent-sage: #7D8C7A;
+    --accent-dark: #2C3632;
+    --line: #E0E0DB;
+
+    --font-heading: 'Syne', sans-serif;
+    --font-body: 'Manrope', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-main);
+    color: var(--text-primary);
+    font-family: var(--font-body);
+    font-weight: 400;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    max-width: 1000px;
+    /* Comfortable reading width */
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+/* --- Navigation --- */
+.nav {
+    padding: 30px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: var(--bg-main);
+    /* Ensure content doesn't show through */
+    border-bottom: 1px solid transparent;
+    /* Prepare for potential scroll state */
+    transition: border-color 0.3s;
+}
+
+.logo {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: var(--text-primary);
+}
+
+.link-clean {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    transition: color 0.2s;
+}
+
+.link-clean:hover {
+    color: var(--accent-sage);
+}
+
+/* --- Hero --- */
+.hero {
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    padding-bottom: 60px;
+}
+
+.badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #E6E6E1;
+    color: var(--text-secondary);
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-bottom: 25px;
+    letter-spacing: 0.5px;
+}
+
+.wave {
+    display: inline-block;
+    animation: wave 2.5s infinite;
+    transform-origin: 70% 70%;
+}
+
+@keyframes wave {
+    0% {
+        transform: rotate(0.0deg)
+    }
+
+    10% {
+        transform: rotate(14.0deg)
+    }
+
+    20% {
+        transform: rotate(-8.0deg)
+    }
+
+    30% {
+        transform: rotate(14.0deg)
+    }
+
+    40% {
+        transform: rotate(-4.0deg)
+    }
+
+    50% {
+        transform: rotate(10.0deg)
+    }
+
+    60% {
+        transform: rotate(0.0deg)
+    }
+
+    100% {
+        transform: rotate(0.0deg)
+    }
+}
+
+
+.hero-statement {
+    font-family: var(--font-heading);
+    font-size: 3.5rem;
+    font-weight: 500;
+    line-height: 1.15;
+    margin-bottom: 30px;
+    color: var(--text-primary);
+}
+
+.highlight {
+    color: var(--accent-sage);
+    font-style: italic;
+}
+
+.hero-context {
+    font-size: 1.25rem;
+    color: var(--text-secondary);
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+.scroll-indicator {
+    position: absolute;
+    bottom: 40px;
+    left: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    color: var(--text-secondary);
+    font-size: 0.75rem;
+}
+
+.scroll-indicator .line {
+    width: 1px;
+    height: 60px;
+    background: var(--line);
+}
+
+/* --- Sections --- */
+.section {
+    padding: 100px 0;
+}
+
+.section-header {
+    display: flex;
+    align-items: baseline;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.section-num {
+    font-family: var(--font-heading);
+    color: var(--accent-sage);
+    font-size: 1rem;
+}
+
+.section-header h2 {
+    font-family: var(--font-heading);
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+/* --- Context Cards --- */
+.project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* Gaps for cards */
+}
+
+.project-card {
+    background: var(--bg-card);
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+    transition: transform 0.2s, box-shadow 0.2s;
+    border: 1px solid transparent;
+}
+
+.project-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+    border-color: var(--line);
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    /* title left, date right */
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--line);
+}
+
+.card-header h3 {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.tag {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: var(--text-secondary);
+    background: #F5F5F0;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.role-title {
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: var(--accent-dark);
+}
+
+.description {
+    color: var(--text-secondary);
+    font-size: 1rem;
+    margin-bottom: 25px;
+}
+
+.tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.tech-tags span {
+    font-size: 0.8rem;
+    color: var(--accent-sage);
+    background: rgba(125, 140, 122, 0.1);
+    /* Sage with opacity */
+    padding: 5px 12px;
+    border-radius: 20px;
+    white-space: nowrap;
+}
+
+/* --- Stack Grid --- */
+.stack-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+}
+
+.stack-col h4 {
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--line);
+    color: var(--accent-sage);
+}
+
+.stack-col ul {
+    list-style: none;
+}
+
+.stack-col li {
+    margin-bottom: 10px;
+    color: var(--text-secondary);
+}
+
+/* --- Repo Grid --- */
+.repo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.repo-card {
+    background: var(--bg-card);
+    padding: 24px;
+    border-radius: 6px;
+    border: 1px solid transparent;
+    transition: all 0.2s;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    /* Override link styles */
+    text-decoration: none;
+    color: inherit;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02);
+}
+
+.repo-card:hover {
+    transform: translateY(-2px);
+    border-color: var(--accent-sage);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.repo-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.repo-header h3 {
+    font-family: var(--font-heading);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--accent-dark);
+}
+
+.repo-desc {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+}
+
+.lang-tag {
+    font-size: 0.75rem;
+    padding: 2px 8px;
+    border-radius: 12px;
+    background: #eee;
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
+/* Language specific colors (Subtle) */
+.lang-tag.ruby {
+    background: rgba(204, 52, 45, 0.1);
+    color: #CC342D;
+}
+
+.lang-tag.go {
+    background: rgba(0, 173, 216, 0.1);
+    color: #00ADD8;
+}
+
+.lang-tag.shell {
+    background: rgba(137, 224, 81, 0.1);
+    color: #4E8B1D;
+}
+
+.lang-tag.swift {
+    background: rgba(240, 81, 56, 0.1);
+    color: #F05138;
+}
+
+.lang-tag.jitpack {
+    background: rgba(46, 204, 113, 0.1);
+    color: #27ae60;
+}
+
+.lang-tag.rubygems {
+    background: rgba(231, 76, 60, 0.1);
+    color: #e74c3c;
+}
+
+.lang-tag.java {
+    background: rgba(176, 114, 25, 0.1);
+    color: #B07219;
+}
+
+.lang-tag.javascript {
+    background: rgba(241, 224, 90, 0.2);
+    color: #9a8c00;
+}
+
+.lang-tag.python {
+    background: rgba(53, 114, 165, 0.1);
+    color: #3572A5;
+}
+
+.lang-tag.kotlin {
+    background: rgba(169, 123, 255, 0.1);
+    color: #A97BFF;
+}
+
+/* Loading & Error States */
+.loading-repos {
+    grid-column: 1 / -1;
+    text-align: center;
+    color: var(--text-secondary);
+    padding: 40px;
+    font-style: italic;
+}
+
+.error-message {
+    grid-column: 1 / -1;
+    text-align: center;
+    color: var(--text-secondary);
+    padding: 40px;
+}
+
+.error-message a {
+    color: var(--accent-sage);
+    text-decoration: underline;
+}
+
+/* Repo Stats */
+.repo-stats {
+    display: flex;
+    gap: 15px;
+    margin-top: auto;
+    padding-top: 12px;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+}
+
+
+/* --- Footer --- */
+.footer {
+    padding: 80px 0;
+    background: #FFFFFF;
+    border-top: 1px solid var(--line);
+    margin-top: 60px;
+}
+
+.footer h2 {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.footer-actions {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.btn-primary {
+    background: var(--text-primary);
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 6px;
+    transition: background 0.2s;
+}
+
+.btn-primary:hover {
+    background: var(--accent-sage);
+}
+
+.btn-text {
+    color: var(--text-secondary);
+    border-bottom: 1px solid var(--line);
+}
+
+.copyright {
+    color: #999;
+    font-size: 0.8rem;
+}
+
+/* --- Mobile --- */
+@media (max-width: 768px) {
+    .hero-statement {
+        font-size: 2.5rem;
+    }
+
+    .project-card {
+        padding: 25px;
+    }
+
+    .stack-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}

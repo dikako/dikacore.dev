@@ -1,0 +1,134 @@
+/* --- Contact Modal --- */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.modal.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal-backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(48, 48, 48, 0.4);
+    backdrop-filter: blur(4px);
+}
+
+.modal-content {
+    background: var(--bg-card);
+    padding: 30px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 400px;
+    position: relative;
+    z-index: 2001;
+    transform: translateY(20px);
+    transition: transform 0.3s ease;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.modal.active .modal-content {
+    transform: translateY(0);
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.modal-header h3 {
+    font-family: 'Syne', sans-serif;
+    font-size: 1.25rem;
+    color: var(--text-main);
+}
+
+.btn-reset {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+}
+
+.close-icon {
+    font-size: 1.5rem;
+    line-height: 1;
+    color: var(--text-secondary);
+    transition: color 0.2s;
+}
+
+.close-icon:hover {
+    color: var(--text-main);
+}
+
+.contact-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contact-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background: var(--bg-main);
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--text-main);
+    transition: background 0.2s, transform 0.1s;
+}
+
+.contact-item:hover {
+    background: #e8e8e8;
+    /* Slightly darker than Alabaster */
+    transform: translateX(4px);
+}
+
+.contact-item .label {
+    font-weight: 500;
+    color: var(--text-main);
+}
+
+.contact-item .value {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+/* Years Badge */
+.years-badge {
+    font-size: 0.5em;
+    font-weight: 400;
+    color: var(--accent);
+    vertical-align: middle;
+}
+
+/* Company Links */
+.company-link {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.company-link:hover {
+    color: var(--accent);
+}

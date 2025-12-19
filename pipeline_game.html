@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pipeline Puzzle | Dikacore</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600&family=Syne:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/pipeline_game.css">
+</head>
+
+<body>
+    <div class="game-container">
+        <header>
+            <a href="index.html" class="back-link">&larr; Back to main dikacore.dev</a>
+            <div>
+                <h1>Pipeline Master</h1>
+                <span class="level-badge">Level <span id="current-level-num">1</span> of <span
+                        id="total-levels">?</span>: <span id="level-name">SDLC</span></span>
+            </div>
+        </header>
+
+        <div class="game-board">
+            <p class="instruction" id="instruction">Arrange the steps in the correct order.</p>
+
+            <!-- Target Area -->
+            <div class="pipeline-track" id="pipeline-track">
+                <!-- Slots injected by JS -->
+            </div>
+
+            <!-- Source Area -->
+            <div class="source-container" id="source-container">
+                <!-- Blocks injected by JS -->
+            </div>
+
+            <div class="controls">
+                <button id="reset-btn" class="btn btn-reset">Reset</button>
+                <button id="check-btn" class="btn btn-check">Deploy Pipeline 🚀</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Win Overlay -->
+    <div id="win-overlay" class="overlay">
+        <div class="modal-content">
+            <h2>Pipeline Deployed! 🎉</h2>
+            <p>Production is stable. Great job!</p>
+            <br>
+            <button id="next-level-btn" class="btn btn-check">Next Challenge &rarr;</button>
+        </div>
+    </div>
+
+    <script src="js/pipeline_game.js"></script>
+</body>
+
+</html>

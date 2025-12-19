@@ -487,6 +487,57 @@ a {
     font-size: 0.8rem;
 }
 
+/* --- Floating Action Button --- */
+.fab-container {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1000;
+}
+
+.fab-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: var(--accent-sage);
+    color: #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, background 0.2s, box-shadow 0.2s;
+    text-decoration: none;
+    font-size: 1.5rem;
+    border: none;
+    cursor: pointer;
+}
+
+.fab-btn:hover {
+    background: var(--accent-dark);
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+.fab-tooltip {
+    position: absolute;
+    right: 70px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #333;
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s;
+}
+
+.fab-container:hover .fab-tooltip {
+    opacity: 1;
+}
+
 /* --- Mobile --- */
 @media (max-width: 768px) {
     .hero-statement {

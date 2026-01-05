@@ -19,6 +19,12 @@ document.addEventListener('DOMContentLoaded', () => {
         yearsElement.textContent = `(${yearsExp}+ years)`;
     }
 
+    // Update copyright year
+    const copyrightYear = document.getElementById('copyright-year');
+    if (copyrightYear) {
+        copyrightYear.textContent = now.getFullYear();
+    }
+
     // Calculate duration for each job
     document.querySelectorAll('.project-card[data-start]').forEach(card => {
         const startStr = card.dataset.start;

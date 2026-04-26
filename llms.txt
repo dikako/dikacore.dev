@@ -1,0 +1,43 @@
+# dikacore.dev
+
+> Personal site of Fransiskus Andika Setiawan (Dika) — Software Developer in Test (SDET) and QA Core Enabler at Stockbit. Builds test infrastructure, Appium device farms, AI-driven flaky-test detection, self-healing locators, and CI/CD pipelines for iOS, Android, Web, Desktop, and API.
+
+## About
+
+- **Name:** Fransiskus Andika Setiawan (also: Dika, dikako, dikakoko, dikacore)
+- **Role:** Sr. QA Engineer / QA Core Enabler at Stockbit (Jan 2022 – present)
+- **Location:** Indonesia
+- **Specialties:** Test Automation, Appium Device Farm, Self-healing locators, AI for QA, Flaky-test detection, Mobile + Web + Desktop + API automation, Security testing with Frida, CI/CD pipelines.
+
+## Stack
+
+- **Languages:** Java, Ruby, Go, JavaScript / TypeScript, Python, Swift, Kotlin, PHP
+- **Automation:** Cucumber, TestNG, RSpec, Cypress, Playwright, Appium, Selenium, WebdriverIO, Postman / Newman, K6
+- **Infra:** Docker, Jenkins, GitLab CI, GitHub Actions, ArgoCD, Grafana, BrowserStack, Appium Device Farm, Mac Stadium, Genymotion
+- **Coverage:** REST, gRPC, WebSocket, Web, Android, iOS, macOS, Windows, Database, Redis, Kafka
+
+## Pages
+
+- [Home](https://dikacore.dev/): portfolio, professional journey, technical stack, packages, FAQ.
+- [#experience](https://dikacore.dev/#experience): roles at Stockbit, Bukalapak, Tanifund, RCTI+, dibimbing.id.
+- [#stack](https://dikacore.dev/#stack): languages, automation, infrastructure, platform coverage.
+- [#packages](https://dikacore.dev/#packages): published libraries and tools.
+- [#faq](https://dikacore.dev/#faq): common questions about Dika and SDET work.
+- [Pipeline Master](https://dikacore.dev/pipeline_game.html): interactive puzzle for SDLC / STLC / CI/CD / DevSecOps.
+
+## External
+
+- GitHub: https://github.com/dikako
+- LinkedIn: https://www.linkedin.com/in/fransiskus-andika-setiawan
+- RubyGems: https://rubygems.org/profiles/dikakoko
+- Email: dikakoko04@gmail.com
+
+## Selected packages
+
+- `appium-locator-healer` — self-healing locators for Appium (JitPack).
+- `gdrive-downloader` — utility to download files from Google Drive (JitPack).
+- Cucumber Runner — VS Code extension to run/debug `.feature` scenarios with play buttons.
+
+## Crawler policy
+
+This site welcomes indexing by search engines and AI crawlers (GPTBot, ChatGPT-User, ClaudeBot, anthropic-ai, PerplexityBot, Google-Extended, Applebot, CCBot, Bytespider, Amazonbot). See `/robots.txt`.

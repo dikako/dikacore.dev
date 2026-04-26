@@ -156,4 +156,33 @@ document.addEventListener('DOMContentLoaded', () => {
             closeModal();
         }
     });
+
+    // FAB quick-links menu
+    const fabContainer = document.querySelector('.fab-container');
+    const fabToggle = document.getElementById('fab-toggle');
+
+    if (fabContainer && fabToggle) {
+        const closeFab = () => {
+            fabContainer.classList.remove('open');
+            fabToggle.setAttribute('aria-expanded', 'false');
+        };
+
+        fabToggle.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const isOpen = fabContainer.classList.toggle('open');
+            fabToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        });
+
+        document.addEventListener('click', (e) => {
+            if (fabContainer.classList.contains('open') && !fabContainer.contains(e.target)) {
+                closeFab();
+            }
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && fabContainer.classList.contains('open')) {
+                closeFab();
+            }
+        });
+    }
 });

@@ -18,11 +18,10 @@
 
 ## Pages
 
-- [Home](https://dikacore.dev/): portfolio, professional journey, technical stack, packages, FAQ.
+- [Home](https://dikacore.dev/): portfolio, professional journey, technical stack, packages.
 - [#experience](https://dikacore.dev/#experience): roles at Stockbit, Bukalapak, Tanifund, RCTI+, dibimbing.id.
 - [#stack](https://dikacore.dev/#stack): languages, automation, infrastructure, platform coverage.
 - [#packages](https://dikacore.dev/#packages): published libraries and tools.
-- [#faq](https://dikacore.dev/#faq): common questions about Dika and SDET work.
 - [Pipeline Master](https://dikacore.dev/pipeline_game.html): interactive puzzle for SDLC / STLC / CI/CD / DevSecOps.
 
 ## External
